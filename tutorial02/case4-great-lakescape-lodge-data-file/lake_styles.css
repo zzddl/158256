@@ -1,0 +1,86 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+@font-face {
+	font-family: "cac_champagne";
+	src: url("cac_champagne.ttf");
+}
+@font-face {
+	font-family: "DobkinPlain";
+	src: url("DobkinPlain.ttf");
+}
+
+body > header > nav > ul > li > a,section#rightcol > nav > ul > li > a {
+	text-decoration: none;
+	color: 	#C0C0C0;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+body > header {
+	background-color: rgb(120,74,119);
+	padding-bottom: 7px;
+	color: white;
+}
+
+
+h1#lefthead1 {
+	font-family: cac_champagne;
+	font-size: 60px;
+}
+
+
+section#leftcol {
+	background-color: rgb(27,29,19);
+	color: rgb(255,255,255);
+	margin: 0px;
+	padding: 20px;
+	height: 1300px;
+}
+
+section#leftcol > aside > h1 {
+	text-align: center;
+}
+section#leftcol aside#left {
+	background-color: rgb(226,162,141);
+}
+
+section#leftcol aside#right {
+	background-color: rgb(209,187,113);
+}
+
+h2#righthead1,h2#righthead2,h2#righthead3 {
+	font-family: DobkinPlain;
+	color: white;
+}
+
+section#rightcol {
+	background-color: rgb(88,45,89);
+	margin: 0px;
+	padding: 20px;
+	width: 30%;
+	height: 1300px;
+}
+
+body > section#rightcol > blockquote {
+	color: #FF00FF;
+}
+
+footer {
+	background-color: rgb(78,69,79);
+	text-align: center;
+	color: #C0C0C0;
+}
