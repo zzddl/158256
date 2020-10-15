@@ -5,8 +5,8 @@
    Case Problem 4
    
    Great Lakescape Lodge Style Sheet
-   Author: 
-   Date:   
+   Author: Dinglong Zhang
+   Date:2020.9.17
    
    Filename: lake_styles.css
 
@@ -20,15 +20,23 @@
 	src: url("DobkinPlain.ttf");
 }
 
-body > header > nav > ul > li > a,section#rightcol > nav > ul > li > a {
+body > header > nav > ul > li > a ,section#rightcol > nav > ul > li > a{
 	text-decoration: none;
 	color: 	#C0C0C0;
+	
 }
-
 li {
 	list-style-type: none;
 }
-
+body > section#leftcol > aside#left > ul > li {
+	list-style-type: disc;
+}
+body {
+	border-style: outset;
+	border-left-width: 20px;
+	border-right-width: 20px;
+	border-color: rgb(202,204,138);
+}
 
 body > header {
 	background-color: rgb(120,74,119);
@@ -42,13 +50,20 @@ h1#lefthead1 {
 	font-size: 60px;
 }
 
+body > section#leftcol > aside#right > h2 {
+	font-size: 20px;
+}
 
 section#leftcol {
 	background-color: rgb(27,29,19);
 	color: rgb(255,255,255);
 	margin: 0px;
-	padding: 20px;
 	height: 1300px;
+}
+body > section#leftcol > p {
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 section#leftcol > aside > h1 {
@@ -60,6 +75,9 @@ section#leftcol aside#left {
 
 section#leftcol aside#right {
 	background-color: rgb(209,187,113);
+}
+section#leftcol > aside#left > ul > li > cite > a, section#leftcol > aside#left > ul > li > a {
+	color: #F9F;
 }
 
 h2#righthead1,h2#righthead2,h2#righthead3 {
@@ -77,8 +95,20 @@ section#rightcol {
 
 body > section#rightcol > blockquote {
 	color: #FF00FF;
+	font-size: 20px;
 }
 
+body > section#rightcol > blockquote:before {
+  color: #FF00FF;
+  content: "\201C";
+  font-size: 1.5em;
+}
+
+blockquote:after {
+  color: #FF00FF;
+  content: "\201D";
+  font-size: 1.5em;
+}
 footer {
 	background-color: rgb(78,69,79);
 	text-align: center;

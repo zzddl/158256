@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*
+
+   Park City Gazette Style Sheet
+   Author: dinglong zhang
+   Date: 2020/9/24
+
+   Filename:         paper.css
+   Supporting Files: 
+
+*/
+
+header {
+	background-image: url("parch2.jpg");
+}
+
+body > section#leftcol {
+	width: 15%;
+	float: left;
+	background-image: url("parch2.jpg");
+}
+
+body > section#leftcol > ul > li {
+	list-style-type: none;
+	line-height: 30px;
+	position: relative;
+	left: -30px;
+}
+body > section#leftcol > ul {
+	padding-bottom: 76.5%;
+}
+
+body > section#rightcol {
+	width: 85%;
+	float: left;
+}
+
+
+body > section#rightcol > aside#left {
+	width: 50%;
+	float: left;
+}
+
+body > section#rightcol > aside#right {
+	width: 50%;
+	float: left;
+}
+
+footer {
+	text-align: center;
+}
+
+section#rightcol > aside#right > div#div1 > h2 {
+	background-color: rgb(238,232,191);
+	padding: 20px;
+	margin: 0;
+}
+
+
+h1, h2, body > section#rightcol > aside#right > div#div2 > span#div4 > h3  {
+	letter-spacing: 4px;
+	word-spacing: 5px;
+}
+
+body > section#rightcol > aside#right > div#div1 > h2 {
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+}
+
+div#div2 {
+	background-image: url("parch.jpg");
+	padding: 10px;
+	padding-bottom: 10px;
+}
+
+body > section#rightcol > aside#right > div#div2 > span#div4 {
+	width: 50%;
+	float: right;
+}
+
+body > section#rightcol > aside#right > div#div2 > span#div4 > ul {
+	border-style: solid;
+	background-color: rgb(175,145,92);
+	margin-top: 0px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	font-size: 10px;
+}
+
+.div3 {
+	background-image: url("parch2.jpg");
+	padding-top: 10px;
+}
+
+section#rightcol > aside#right > .div3 > h2 {
+	text-align: center;
+}
+
+.div3 > ul {
+	column-count: 2;
+	line-height: 30px;
+}
+
+body > section#rightcol >aside#left > p {
+	padding: 30px;
+
+}
+
+body > section#rightcol >aside#left > h1,body > section#rightcol >aside#left > h2 {
+	text-indent: 20px;
+}
+body > section#rightcol >aside#left > p > img {
+	float: right;
+	height: 200px;
+	margin: 30px;
+	display: block;
+}
+
+body > section#rightcol > aside#right > div#div2 > span#div4 > h3 {
+	border-style: solid;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+	margin: 0;
+}
+
+body > section#rightcol > aside#right > div#div1 > img {
+	float: right;
+	height: 70px;
+	padding-top: 0px; 
+}
+
+body > section#leftcol > ul > li > a , body > section#rightcol > aside#right > .div3 > ul > li > a {
+	text-decoration: none;
+	color: black;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var count = 0;
+		function counter() {
+			content = document.getElementById('reply').value;
+			if (content == "fred") {
+				alert(content);
+				count = Number(count) + 1;
+				document.getElementById("demo").innerHTML = "clicked " + count + " times"
+			}
+		}
+	</script>
+</head>
+<body>
+	<textarea id = "reply">fred</textarea>
+	<button type="button" onclick="counter()">submit</button>
+	<p id = "demo"></p>
+</body>
+</html>

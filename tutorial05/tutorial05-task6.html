@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<textarea id = "demo"></textarea>
+	<button type="button" onclick="Add()">ADD</button>
+	<button type="button" onclick="Show()">SHOW</button>
+	<button type="button" onclick="Clear()">CLEAR</button>
+	<button type="button" onclick="Deletelast()">Delete-Last</button>
+	<p id = "showarr"></p>
+
+	<script type="text/javascript">
+		var arr = new Array();
+		function Add() {
+			content = document.getElementById("demo").value;
+			arr.push(content);
+		}
+
+		function Show() {
+			document.getElementById("showarr").innerHTML = arr;
+		}
+
+		function Clear() {
+			arr.splice(0,arr.length);
+		}
+
+		function Deletelast() {
+			arr.pop();
+		}
+	</script>
+</body>
+</html>

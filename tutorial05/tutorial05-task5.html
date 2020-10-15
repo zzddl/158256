@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+</head>
+<body>
+	<p id = "output"></p>
+	<textarea id = "limit"></textarea>
+	<button type="button" onclick="limitnumber()">submit</button>
+	<p id = "demo"></p>
+
+	<script type="text/javascript">
+		function forlimit(x) {
+			var text = "";
+			var i;
+			for (i = 0; i < x ; i++) {
+				text += i + "&nbsp";
+			}
+			return text;
+		}
+		
+		function onetoten() {
+			return forlimit(11);
+		}
+		document.getElementById("output").innerHTML = onetoten();
+
+		var limit1;
+		function limitnumber() {
+			limit1 = parseInt(document.getElementById("limit").innerHTML);
+			return forlimit(limit1);
+		}
+
+		document.getElementById("demo").innerHTML = limitnumber();
+	</script>
+	
+</body>
+</html>

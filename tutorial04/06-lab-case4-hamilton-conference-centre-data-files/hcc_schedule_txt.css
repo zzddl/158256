@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*
+   Course textbook:
+	New Perspectives on HTML and CSS, 7th Edition
+   	Tutorial 6
+   	Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Dinglong Zhang
+   Date: 2020/10/7
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+table#table0 {
+	border-collapse: collapse;
+	width: 100%
+}
+
+tr#tr2 > th {
+	width: 5.3%;
+}
+
+table#table0 tr td {
+	font-size: 13px;
+}
+
+table#table0 tr td:first-child {
+	background-color: rgb(255,255,240);
+	width: 8%;
+ }
+
+tr#tr1, tr#tr2 {
+	background-color: rgb(86,206,184);
+	color: white;
+	text-align: center;
+}
+
