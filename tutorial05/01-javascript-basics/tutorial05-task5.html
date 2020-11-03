@@ -25,13 +25,22 @@
 		}
 		document.getElementById("output").innerHTML = onetoten();
 
-		var limit1;
+		
 		function limitnumber() {
-			limit1 = parseInt(document.getElementById("limit").innerHTML);
-			return forlimit(limit1);
+			var test = "";
+			var i;
+			limit1 = document.getElementById("limit").value;
+			if (isNaN(limit1)){
+				alert('no')
+			} else {
+				for (i = 0; i < parseInt(limit1)+1; i++) {
+				test += i + '&nbsp';
+			}
+			document.getElementById("demo").innerHTML = test;
+			}
+			
 		}
 
-		document.getElementById("demo").innerHTML = limitnumber();
 	</script>
 	
 </body>

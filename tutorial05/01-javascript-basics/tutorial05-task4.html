@@ -6,7 +6,8 @@
 		var count = 0;
 		function counter() {
 			content = document.getElementById('reply').value;
-			if (content == "fred") {
+			content1 = content.toLowerCase();
+			if (content1 == "fred") {
 				alert(content);
 				count = Number(count) + 1;
 				document.getElementById("demo").innerHTML = "clicked " + count + " times"
